@@ -99,17 +99,15 @@ In the console.py, you will find the following commands:
 
 * Creating user
 
-$ ./console.py
-(hbnb) create user
-** class doesn't exist **
 (hbnb) create User
-564702e1-cc22-45a1-a3a2-adb27ffdca5d                   (hbnb)
-(hbnb) update User
-** instance id missing **
-(hbnb) User.show("564702e1-cc22-45a1-a3a2-adb27ffdca5d")                                                      [User] (564702e1-cc22-45a1-a3a2-adb27ffdca5d) {'created_at': datetime.datetime(2022, 10, 28, 21, 47, 57, 918419), 'id': '564702e1-cc22-45a1-a3a2-adb27ffdca5d', 'updated_at': datetime.datetime(2022, 10, 28, 21, 47, 57, 918444)}
-(hbnb) User.update("564702e1-cc22-45a1-a3a2-adb27ffdca5d", "first_name", "Marcus")                            (hbnb) User.show("564702e1-cc22-45a1-a3a2-adb27ffdca5d")                                                      [User] (564702e1-cc22-45a1-a3a2-adb27ffdca5d) {'id': '564702e1-cc22-45a1-a3a2-adb27ffdca5d', 'updated_at': datetime.datetime(2022, 10, 28, 21, 51, 32, 137862), 'first_name': 'Marcus', 'created_at': datetime.datetime(2022, 10, 28, 21, 47, 57, 918419)}
-(hbnb)                                                 (hbnb) quit
-$
+7787b95d-69c6-4408-aaf5-2597ea3d847d                   (hbnb)
+(hbnb) update User                                     ** instance id missing **
+(hbnb) User.show("7787b95d-69c6-4408-aaf5-2597ea3d847d")
+[User] (7787b95d-69c6-4408-aaf5-2597ea3d847d) {'created_at': datetime.datetime(2022, 10, 28, 22, 50, 1, 603228), 'id': '7787b95d-69c6-4408-aaf5-2597ea3d847d', 'updated_at': datetime.datetime(2022, 10, 28, 22, 50, 1, 603262)}                                                   (hbnb)
+(hbnb) User.update("7787b95d-69c6-4408-aaf5-2597ea3d847d", "first_name", "Marcus")
+(hbnb) User.show("7787b95d-69c6-4408-aaf5-2597ea3d847d")
+[User] (7787b95d-69c6-4408-aaf5-2597ea3d847d) {'created_at': datetime.datetime(2022, 10, 28, 22, 50, 1, 603228), 'id': '7787b95d-69c6-4408-aaf5-2597ea3d847d', 'first_name': 'Marcus', 'updated_at': datetime.datetime(2022, 10, 28, 22, 52, 44, 51803)}                           (hbnb)
+(hbnb) quit
 
 ### Unittest
 
